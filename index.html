@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gege | Links</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #29537b, #354a83);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* BACKGROUND BLUR */
+    .bg-shape {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(255, 255, 255, 0.25);
+      filter: blur(80px);
+      border-radius: 50%;
+      animation: float 6s ease-in-out infinite;
+    }
+
+    .shape1 {
+      top: -100px;
+      left: -100px;
+    }
+
+    .shape2 {
+      bottom: -120px;
+      right: -120px;
+      animation-delay: 2s;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(20px); }
+    }
+
+    /* CARD */
+    .card {
+      position: relative;
+      background: rgba(255, 255, 255, 0.96);
+      padding: 32px 28px;
+      width: 100%;
+      max-width: 380px;
+      border-radius: 26px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+      z-index: 1;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 34px;
+      margin-bottom: 4px;
+      color: #29537b;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 22px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      background: linear-gradient(135deg, #6daedf, #8fc9f3);
+      color: white;
+      padding: 15px;
+      margin: 14px 0;
+      border-radius: 16px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      transition: all 0.25s ease;
+      box-shadow: 0 8px 18px rgba(79, 172, 212, 0.35);
+    }
+
+    a:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 12px 26px rgba(79, 172, 212, 0.45);
+    }
+
+    /* SPARKLE */
+    .sparkle {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      font-size: 22px;
+      animation: sparkle 1.8s infinite ease-in-out;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.7; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Decorative background -->
+  <div class="bg-shape shape1"></div>
+  <div class="bg-shape shape2"></div>
+
+  <!-- Card -->
+  <div class="card">
+    <div class="sparkle">✨</div>
+    <h1>Gege</h1>
+    <p>@gheageltraa</p>
+
+    <a href="https://instagram.com/gheagltra_" target="_blank">📸 Instagram</a>
+    <a href="https://tiktok.com/@ghea.geltraa" target="_blank">🎵 TikTok</a>
+    <a href="https://open.spotify.com/user/brfyypdbxvytago39cn65a4bg" target="_blank">🎧 Spotify</a>
+    <a href="https://twitter.com/geltraa" target="_blank">🐦 Twitter (X)</a>
+  </div>
+
+</body>
+</html>
